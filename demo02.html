@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- CSS -->
 <style>
-    /* 选择器{样式} */
-    p{
-        color: pink;
-        font-size: 120px;
+    * {
+        padding: 0;
+        margin: 0;
     }
-    .importantPeople{
-        color: red;
+
+    .top {
+        margin: 0 auto;
+        height: 50px;
+        background-color: pink;
+    }
+
+    .banner {
+        width: 980px;
+        height: 150px;
+        background-color: pink;
+        margin: 10px auto;
+    }
+
+    .box>ul>.bot {
+        height: 240px;
+        margin-top: 10px;
+    }
+
+    .box {
+        width: 980px;
+        margin: 0 auto;
+        height: 600px;
+        background-color: pink;
+    }
+
+    .footer {
+        height: 120px;
+        background-color: lightblue;
+        margin-top: 30px;
+    }
+
+    .box>ul>li {
+        list-style: none;
+        color: #fff;
+        background-color: lightblue;
+        float: left;
+        width: 237px;
+        height: 350px;
+        margin-right: 10px;
     }
 </style>
+
 <body>
-    <h4>表格的使用</h4>
-    <table align = "center" border = "1" cellpadding = "20" cellspacing = "0" >
-    <thead>
-        <tr>
-            <th>姓</th><th colspan="2">信息</th>
-        </tr>
-        <tr>
-            <th>名</th><th>性别</th><th>年龄</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td >刘德华</td><td rowspan="4">男</td><td>56</td>
-        </tr>
-        <tr>
-            <td class="importantPeople">张学友</td><td>58</td>
-        </tr>
-        <tr>
-            <td>郭富城</td><td>51</td>
-        </tr>
-        <tr>
-            <td>黎明</td><td>57</td>
-        </tr>
-    </tbody>
-    </table>
-    <p>用户表格</p>
-    <form action="">
-        用户名： <input type="text" name = "username" value="请输入用户名"> <br>
-        密码：  <input type="password" name = "pws"> <br>
-        籍贯：  <select name="birtharea" id="ba">
-                    <option>金星</option>
-                    <option selected="selected">地球</option>
-                    <option>火星</option>
-                    <option>水星</option>
-                    <option>太阳</option>
-                </select><br>
-        性别： <label for="g_m">男</label> <input type="radio" name="gender" id="g_m"> <label for="g_w">女</label> <input type="radio" name="gender" id = "g_w"> <label for="g_u">未知</label> <input type="radio" name="gender" id="g_u"> <br>
-        爱好：吃饭<input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby"> 打豆豆<input type="checkbox" name="hobby"><br>
-        <input type="submit" value="好嘞"><input type="reset" value="重新来喵"><br>
-        <label for="ta">今日反馈：</label><br>
-        <textarea rows="30" cols="200" id = "ta">请输入反馈内容</textarea><br>
-    </form>
-    <dl>
-        <dt><h4></h4></dt>
-        <dd>了解更多</dd>
-        <dd>给点钱喵</dd>
-    </dl>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li style="margin-right:0;">4</li>
+            <li class="bot">1</li>
+            <li class="bot">2</li>
+            <li class="bot">3</li>
+            <li class="bot" style="margin-right:0;">4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
 </body>
+
 </html>
